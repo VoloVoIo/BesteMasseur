@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage Dienstleistungen | Augsburg</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0e8d0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #c29f77, #b49382);
+      padding: 4rem 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+    header p {
+      font-size: 1.5rem;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1588776814546-ec7c66c66007');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+      animation: fadeIn 2s ease-out;
+    }
+    .content {
+      padding: 3rem 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .service-item {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transform: scale(1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    .service-item h3 {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      color: #b29a79;
+    }
+    .service-item p {
+      font-size: 1.2rem;
+    }
+    .contact-form {
+      background: #ffffff;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form h2 {
+      margin-bottom: 1rem;
+      color: #b29a79;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #b29a79;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #9c7d5e;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f0e8d0;
+      color: #555;
+      font-size: 1rem;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Massage Dienstleistungen</h1>
+    <p>Professionelle Entspannung in Augsburg</p>
+  </header>
+  <div class="hero">
+    Entspannen Sie sich & lassen Sie den Stress los
+  </div>
+  <div class="content">
+    <section class="services">
+      <div class="service-item">
+        <h3>Entspannungsmassage</h3>
+        <p>60€ / Stunde – Perfekt, um den Alltag zu vergessen und neue Energie zu tanken.</p>
+      </div>
+      <div class="service-item">
+        <h3>Honigmassage</h3>
+        <p>100€ / Stunde – Für eine tiefere Entspannung und die Förderung der Hautgesundheit.</p>
+      </div>
+      <div class="service-item">
+        <h3>Vakuummassage</h3>
+        <p>70€ / Stunde – Löst Verspannungen und fördert die Durchblutung.</p>
+      </div>
+    </section>
+    <section class="contact-form">
+      <h2>Kontaktieren Sie uns</h2>
+      <form>
+        <input type="text" placeholder="Ihr Name" required>
+        <input type="email" placeholder="Ihre E-Mail" required>
+        <textarea placeholder="Ihre Nachricht" rows="4" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Massage Dienstleistungen Augsburg. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
